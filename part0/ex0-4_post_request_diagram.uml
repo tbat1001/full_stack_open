@@ -23,5 +23,3 @@ note over Browser:
 the browser executes an event handler
 that renders the notes to display
 end note
-Browser->Server: HTTP Get https://studies.cs.helsinki.fi/exampleapp/favicon.ico
-Server-->Browser: favicon
