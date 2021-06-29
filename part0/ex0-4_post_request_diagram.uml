@@ -1,0 +1,27 @@
+title HTTP Post Request
+
+Browser->Server: HTTP Post Request https://studies.cs.helsinki.fi/exampleapp/new_note
+note over Browser:
+User Enters information in the form
+and clicks the save button
+end note
+note over Server:
+redirect to https://studies.cs.helsinki.fi/exampleapp/notes
+end note
+Server-->Browser: HTML code
+Browser->Server: HTTP Get https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css
+Browser->Server: HTTP Get https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: main.js
+note over Browser:
+browser starts executing js-code
+that request JSON data from server
+end note
+Browser->Server: HTTP Get https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: JSON data
+note over Browser:
+the browser executes an event handler
+that renders the notes to display
+end note
+Browser->Server: HTTP Get https://studies.cs.helsinki.fi/exampleapp/favicon.ico
+Server-->Browser: favicon
