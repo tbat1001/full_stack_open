@@ -1,0 +1,18 @@
+title Ex0.6: Single page app form
+
+
+note over Browser:
+User Enters information in the form
+and clicks the save button
+end note
+
+note over Browser:
+using JavaScript preventDefault() method
+to prevent the default action of the submit button (the form)
+end note
+Browser->Server: AJAX (POST) request https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: JSON data
+note over Browser:
+the browser executes an event handler
+that renders the notes to display
+end note
